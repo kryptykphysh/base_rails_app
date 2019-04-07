@@ -1,24 +1,25 @@
-# README
+# Base Rails Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic Rails template that includes a number of basic setup steps to
+speed things along:
 
-Things you may want to cover:
+- HAML Templating
+- Environment variables loaded from a .env file
+- Bootstrap 4 available in views
+- FactoryBot test factories
+- Faker for generating random data
+- Guard-RSpec for automatically running tests on file save
+- RSpec-Rails for better tests
+- SimpleCov for test coverage reports
+- Automatic model and test annotation with table schema
+- meta_request for use with Chrome's RailsPanel plugin
+- PRY console
+- Rubocop linting
+- Automatic cleaning of test database between tests
 
-* Ruby version
+## Renaming the application
 
-* System dependencies
+Open `config/application.rb` and rename the `BaseRailsApp` module to your new
+name.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You may also wish to rename cookies in `config/initializers/session_store.rb`
